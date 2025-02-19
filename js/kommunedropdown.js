@@ -32,6 +32,8 @@ function createdHrefTag(kommune) {
         el.href = kommune.href;
         el.textContent = kommune.navn;
         divHrefs.appendChild(el);
+        const br = document.createElement("br"); // ny linje efter hver valgte kommune
+        divHrefs.appendChild(br);
     }
     kommune.ertaget = true;
 }
